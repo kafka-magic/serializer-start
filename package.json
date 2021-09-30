@@ -1,0 +1,32 @@
+{
+  "name": "kafka-magic-serializer-start",
+  "version": "1.0.0",
+  "description": "Starting point to create your own custom serializer for Kafka Magic using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "webpack --mode production",
+    "test": "ts-node node_modules/jasmine/bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kafka-magic/serializer-start"
+  },
+  "author": "Digitsy Inc",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.6.2",
+    "copy-webpack-plugin": "^4.5.1",
+    "jasmine": "^3.1.0",
+    "json-loader": "^0.5.7",
+    "ts-loader": "^4.2.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.1.0",
+    "zip-webpack-plugin": "^3.0.0"
+  }
+}
