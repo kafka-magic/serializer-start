@@ -8,11 +8,11 @@ To make it work with Kafka Magic your serializing/deserializing algorithm must b
 var KafkaMagicSerializer = {
     serializeToBytes: function (messageJson) {
         // can serialize message JSON to byte array
-        return '{ "field1": "val1" }'
+        return [65, 66, 67];
     },
     deserializeToJson: function (bytes) {
         // can deserialize message JSON from byte array
-        return [65, 66, 67];
+        return '{ "field1": "val1" }'
     }
 };
 ```
