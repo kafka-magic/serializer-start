@@ -19,7 +19,7 @@ var KafkaMagicSerializer = {
 
 This repository provides a starting project, in case you want to write your custom Kafka Magic message serializer in TypeScript.
 
-Make sure you have node typescript installed  `npm install -g typescript`.
+Make sure you have Node.js and TypeScript installed on your machine:  `npm install -g typescript`.
 
 Run `npm run build`. The output will be in the `./dist` folder.
 
