@@ -1,12 +1,7 @@
-# Kafka Magic custom serializer starting TypeScript project
+import { ContextBytes, GetSchemaCallback } from "./app/ContextBytes";
+import { ContextJson } from "./app/ContextJson";
+import { MagicSerializer } from "./app/MagicSerializer";
 
-Starting point to create your own custom serializer/deserializer for Kafka Magic tool.
-
-You must create a class implementing `MagicSerializer` interface. Choose a descriptive name for the class, users will be selecting it from the dropdown.
-
-Your code can look something like this:
-
-```typescript
 export class MyCustomSerializer implements MagicSerializer {
     
     serializeToBytes(context: ContextJson, schema: string): ContextBytes {
@@ -45,9 +40,3 @@ export class MyCustomSerializer implements MagicSerializer {
         return result;
     };
 }
-```
-
-Clone this repository. Run `npm i`, then `npm run build`. The output will be in the `./dist` folder. You will place this output file to a folder where KafkaMagic app can find it, then specify the path to that folder and the name of your class in the app cluster connection configuration page.
-
-To execute unit tests run `npm test`.
-
